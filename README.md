@@ -1,5 +1,9 @@
 # DialnRay
 
+<p align="center">
+  <img src="Resources/AppIcon.svg" width="128" height="128" alt="DialnRay app icon">
+</p>
+
 DialnRay is a native macOS motor-accessibility utility that makes dense interfaces easier to reach. Press **Option–Space**, move around the dial toward a recognized control, hold to latch, and confirm or auto-click using the configured activation mode.
 
 ## What the Mac v1 includes
