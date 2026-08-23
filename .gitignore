@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager and Xcode
+/.build/
+/.swiftpm/
+/DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Generated application and release artifacts
+/build/
+/releases/
+*.app
+*.dmg
+*.zip
+
+# Signing and notarization credentials
+*.cer
+*.crt
+*.key
+*.p12
+*.pem
+*.provisionprofile
+
+# Local environment files
+.env
+.env.*
+!.env.example
