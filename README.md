@@ -22,6 +22,32 @@ DialnRay is a native macOS motor-accessibility utility that makes dense interfac
 - Screen Recording permission only if visual recognition is enabled.
 - Xcode 16 or later to build. The current project is verified with Swift 6.2/Xcode 26.
 
+## Install on macOS
+
+### From a prebuilt release
+
+1. Download `DialnRay-macOS.dmg` from the repository's Releases page.
+2. Open the DMG and drag **DialnRay** into **Applications**.
+3. Open **Applications**, then launch **DialnRay**. If macOS blocks the first launch, Control-click the app, choose **Open**, and confirm.
+4. In DialnRay Settings, open **Permissions** and enable DialnRay under **System Settings → Privacy & Security → Accessibility**.
+5. Enable **Screen Recording** only if you want DialnRay to recognize controls that an app does not expose through Accessibility. Quit and reopen DialnRay after changing this permission.
+6. Press **Option–Space** to open the dial. Press **Escape** to cancel.
+
+The repository does not currently publish a prebuilt release. Until a signed and notarized release is available, install from source using the steps below.
+
+### Build and install from source
+
+```sh
+git clone https://github.com/mneshath7/DialnRay.git
+cd DialnRay
+swift test --disable-sandbox
+./scripts/build-app.sh
+ditto build/DialnRay.app /Applications/DialnRay.app
+open /Applications/DialnRay.app
+```
+
+Building requires Xcode and its command-line tools. The locally built app is development-signed; commercial downloads should be Developer ID signed and notarized before distribution.
+
 ## Build and test
 
 ```sh
